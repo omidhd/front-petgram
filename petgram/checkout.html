@@ -1,0 +1,220 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/css/style.css">
+    <title>checkout</title>
+</head>
+<body>
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-md mb-4" id="navDark">
+    <div class="container py-2">
+        <a class="navbar-brand" href="#"><img src="public/img/logo.png" alt="logo"></a>
+
+        <button class="openbtn" onclick="openNav()">☲</button>
+        <div id="mySidepanel" class="sidepanel">
+            <div class="d-md-flex align-items-center justify-content-between flex-md-grow-1 gap-3" id="sideChild">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
+                <ul class="navbar-nav ms-auto me-auto mb-2 mb-md-0 gap-md-4">
+                    <li class="nav-item small">
+                        <a class="nav-link text-primary fw-bold active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item small">
+                        <a class="nav-link text-primary fw-bold" href="#">Contact</a>
+                    </li>
+                </ul>
+
+                <form role="search">
+                    <input class="form-control me-2 bg-transparent rounded-5 search" type="search" placeholder="Search something here!" aria-label="Search">
+                </form>
+                <button class="btn btn-primary py-2 px-4 rounded-5 fw-600 mt-3 mt-md-0" type="submit">Join the community</button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Content -->
+<section style="min-height: 170vh">
+    <div class="container" style="margin-top: 100px">
+        <form action="" class="d-flex justify-content-between flex-wrap gap-5 gap-sm-0">
+            <div class="col-12 col-lg-6">
+                <div>
+                    <h1 class="fw-bold text-primary fs-3">Checkout</h1>
+                    <p class="bg-info py-2 ps-4 pe-5 fs-7 w-75 fw-500 rounded-1">Already have an account? <a href="#" >Log in</a> for faster checkout</p>
+                </div>
+
+                <div>
+                    <div class="mt-5 d-flex align-items-center justify-content-between">
+                        <h2 class="fw-bold text-primary fs-3 ">Customer information</h2>
+                        <a href="#" class="fw-600" style="color: #016FD0">edit</a>
+                    </div>
+                    <input type="text" class="form-control input-checkout" placeholder="email for order confirmation">
+                </div>
+
+                <div>
+                    <div class="mt-5 d-flex align-items-center justify-content-between">
+                        <h3 class="fw-bold text-primary fs-3 ">Billing address</h3>
+                        <a href="#" class="fw-600" style="color: #016FD0">edit details</a>
+                    </div>
+
+                    <div class="d-flex gap-3">
+                        <input type="text" class="form-control input-checkout" placeholder="first name">
+                        <input type="text" class="form-control input-checkout" placeholder="last name">
+                    </div>
+
+                    <div class="mt-4">
+                        <input type="text" class="form-control input-checkout" placeholder="address line - 1">
+                        <input type="text" class="form-control input-checkout" placeholder="address line - 2">
+                        <input type="text" class="form-control input-checkout" placeholder="city">
+                    </div>
+
+                    <div class="d-flex gap-3">
+                        <select class="form-control select-box input-checkout" name="country" id="country">
+                            <option>Country</option>
+                            <option value="USA">USA</option>
+                            <option value="UK">UK</option>
+                            <option value="UEA">UEA</option>
+                            <option value="TURKIY">TURKIY</option>
+                        </select>
+
+                        <select class="form-control select-box input-checkout" name="state" id="state">
+                            <option>State</option>
+                            <option value="One">One</option>
+                            <option value="Two">Two</option>
+                            <option value="Three">Three</option>
+                        </select>
+                    </div>
+
+                    <div class="d-flex gap-3">
+                        <input type="text" class="form-control input-checkout" placeholder="Zip">
+                        <input type="text" class="form-control input-checkout" placeholder="Phone">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-12 col-lg-5 mt-4 mt-lg-0">
+                <div class="d-flex align-items-center justify-content-between">
+                    <h3 class="fw-bold text-primary fs-3 ">Order Summary (1)</h3>
+                    <a href="#" class="fw-600" style="color: #016FD0">edit cart</a>
+                </div>
+
+                <div class="d-flex align-items-center gap-3 w-75 py-3">
+                    <img class="p-3 border border-1" src="public/img/ph_crown-fill.png">
+                    <span class="pe-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</span>
+                </div>
+                <a href="#" class="fs-7 fw-600 text-primary-cart text-decoration-none">+ Enter a promo code</a>
+
+                <div class="d-flex mt-4 gap-4 w-50 border-top border-bottom py-3 text-primary">
+                    <span class="col-6">Lorem Ipsum</span>
+                    <span class="col-6">$12.00</span>
+                </div>
+
+                <div class="d-flex gap-4 w-50 py-3 text-primary">
+                    <span class="col-6">Total</span>
+                    <span class="col-6">$12.00</span>
+                </div>
+
+                <h3 class="fw-bold text-primary fs-3 mt-4 mt-sm-2 mb-3">Payment options</h3>
+
+                <div>
+                    <div class="d-flex align-items-start gap-2">
+                        <input type="radio" id="html" name="fav_language" value="HTML">
+                        <label class="fw-500 small" style="color: #494949" for="html">Direct bank transfer</label>
+                    </div>
+                    <p class="ms-4 fw-100 fs-14 text-secondary">Make payment directly through bank account.</p>
+
+                    <div class="d-flex align-items-center gap-2 mt-4">
+                        <input type="radio" id="css" name="fav_language" value="CSS" checked>
+                        <label class="fw-500 small" for="css" style="color: #494949">Credit/Debit card</label>
+                        <span>
+                            <img src="public/img/visa.png" alt="">
+                            <img src="public/img/amex.png" alt="">
+                            <img src="public/img/mastero.png" alt="">
+                        </span>
+                    </div>
+                    <p class="ms-4 fw-100 fs-14 text-secondary">Pay with your Visa, American Express or Mastercard.</p>
+
+                    <div class="mt-4">
+                        <input type="text" class="form-control input-checkout" placeholder="Card number">
+                        <input type="text" class="form-control input-checkout" placeholder="Expiry date">
+                        <input type="text" class="form-control input-checkout" placeholder="Security code(CVV)">
+                    </div>
+
+                    <div class="my-5 my-sm-4">
+                        <h3 class="fw-bold text-primary fs-3 ">Review & Place Order</h3>
+                        <p class="fw-500 fs-14 text-secondary">Please review the order details and payment details before proceeding to confirm your order</p>
+                    </div>
+
+                    <div class="d-flex align-items-start gap-3 my-4">
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" checked>
+                        <label class="fw-600 small" for="vehicle1"> I agree to the
+                            <a class="text-primary-log" href="#" >Terms & conditions</a>,
+                            <a class="text-primary-log" href="#" >Privacy policy</a> &
+                            <a class="text-primary-log" href="#" >Return policy</a>
+                        </label>
+                    </div>
+
+                    <button class="text-white btn-primary rounded-5 text-justify w-100 p-3 mb-4">Place Order</button>
+
+
+
+                </div>
+
+
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- footer -->
+<footer class="footerPT px-3 px-sm-0 rounded-top-5">
+    <div class="container d-md-flex rounded-4 p-4 align-items-center" style="background-color: #003459;">
+        <div class="col-md-4 mb-3 mb-md-0">
+            <h5 class="text-white fw-bold lh-base">Register now so you don't miss our programs</h5>
+        </div>
+
+        <form class="col-md-8 bg-white rounded-3 d-sm-flex p-3 gap-2 gap-sm-4 align-items-center" action="" method="post">
+            <div class="mb-3 mb-sm-0 col-sm-7 col-lg-8 col-xl-9">
+                <input class="form-control border-0" type="text" name="subscribe" placeholder="Enter your email">
+            </div>
+            <div class="col-md-5 col-lg-4">
+                <button class="btn-primary fw-500 py-3 px-4 text-white rounded-3 flex-1">Subscribe now</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container d-flex justify-content-end align-items-center py-4 border-bottom border-secondary">
+        <div class="col-6 col-sm-8 d-flex text-white gap-3 gap-md-5 mb-sm-0">
+            <a class="small text-decoration-none text-white fw-bold active" aria-current="page" href="#">Home</a>
+            <a class="small text-decoration-none text-white fw-bold" href="#">Contact</a>
+        </div>
+
+        <div class="col-6 col-sm-4 d-flex gap-3 gap-sm-4 gap-md-5">
+            <a href="#"><img src="public/img/Facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="public/img/Twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="public/img/Instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="public/img/YouTube.png" alt="YouTube"></a>
+        </div>
+    </div>
+
+    <div class="container d-flex flex-column-reverse flex-md-row row-gap-4 row-gap-md-0 align-items-center py-4">
+        <div class="col-md-4 text-white small text-start">© 2022 Lorem ipsum. All rights reserved.</div>
+        <div class="col-md-4 text-center"><img src="public/img/footerlogo.png" alt=""></div>
+        <div class="col-md-4 d-flex justify-content-end text-white column-gap-4 gap-md-3 gap-lg-5">
+            <a class="small text-decoration-none text-white" href="#">Terms of Service</a>
+            <a class="small text-decoration-none text-white" href="#">Privacy Policy</a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script src="public/js/script.js"></script>
+</body>
+</html>

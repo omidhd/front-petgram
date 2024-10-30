@@ -1,0 +1,715 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    font-family: 'Montserrat';
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+hr{color: gray;}
+a{text-decoration: none;}
+a:hover{color: #016FD0 !important;}
+img{max-width: 100%;}
+/*End reset CSS*/
+
+/*navbar*/
+.closebtn{
+    display: none;
+}
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #8d8d8d;
+    padding: 6px 12px 8px 12px;
+    border: none;
+    display: none;
+    border-radius: 8px;
+    border: solid 1px lightgray;
+}
+.openbtn:hover {
+    border: solid 1px #adb3ff;
+    color: #adb3ff;
+}
+.sidepanel{
+    width: 90%;
+}
+/*end navbar*/
+
+
+::placeholder {
+    font-size: 14px;
+    color: #99A2A5 !important;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+.container{
+    width: 84% !important;
+}
+.search{
+    background-image: url(../img/search.png);
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    border: 0;
+}
+.searchDark{
+    background-image: url(../img/search.png);
+    background-position: 20px center;
+    background-repeat: no-repeat;
+    padding: 8px 14px 8px 47px;
+    border: 0;
+}
+.search-form{
+    background-image: url(../img/search.png);
+    background-position: 20px center;
+    background-repeat: no-repeat;
+    background-color: #EBEEEF !important;
+    border: 0;
+    padding: 1rem 50px;
+}
+.search-form1{
+    background-image: url(../img/search.png);
+    background-position: 20px center;
+    background-repeat: no-repeat;
+    background-color: #EBEEEF !important;
+    border: 0;
+    padding: 18px 50px;
+}
+.search-item span{
+    border: solid 1px #003459;
+    color: #003459;
+    border-radius: 50px;
+    padding: 10px 40px;
+    font-size: 14.5;
+    font-weight: 500;
+    cursor:pointer;
+}
+.search-item span:hover, .active-search{
+    color: #fff !important;
+    background-color: #00A7E7;
+}
+
+.border-primary{border-color: #003459 !important;}
+.border-primary:hover{border-color: #00528d !important;}
+
+.btn-primary{
+    background-color: #003459;
+    border: 0;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+.btn-primary:hover{background-color: #00528d;}
+.btn-primary-light{background-color: #0078CD;color: #fff !important;}
+.btn-primary-light:hover{background-color: #005899;}
+.btn-outline-primary{
+    font-size: 14px;
+    border: solid 2px #003459 !important;
+    color: #003459 !important;
+}
+.btn-outline-primary:hover{background-color: #003459;color: #fff !important;}
+.bg-info{background-color: #ccedfa !important;}
+.btn-info{background-color: #F0F5FF !important;}
+.bg-warning{background-color:  #F1D092 !important;}
+.bg-warning-light{background-color:  #FCEED5 !important;}
+.bg-secondary-custom{background-color: #EBEEEF !important;}
+
+.fs-1{font-size: 54px !important;}
+.fs-7{font-size: 12px !important;}
+.fs-9{font-size: 9px !important;}
+.fs-11{font-size: 11px !important;}
+.fs-13{font-size: 13px !important;}
+.fs-14{font-size: 14px !important;}
+.fs-15{font-size: 15px !important;}
+
+.fw-400{font-weight: 400 !important;}
+.fw-500{font-weight: 500 !important;}
+.fw-600{font-weight: 600 !important;}
+
+.text-primary{color: #003459 !important;}
+.text-primary-cart{color: #00528C !important;}
+.text-primary-dark{color: #002A48 !important;}
+.text-primary-log{color: #0078CD !important;}
+
+.footerPT{
+    background-color: #002A48;
+    padding-top: 80px;
+}
+
+.input-checkout{
+    background-color: #EBEEEF !important;
+    border: 0;
+    border-radius: 22px;
+    padding: 18px 30px;
+    margin-top: 20px;
+}
+.input-checkout::placeholder{
+    font-size: 16px;
+    font-weight: 400 !important;
+    color: #616161 !important;
+}
+textarea::placeholder{
+    color: #000 !important;
+    font-weight: reqular;
+}
+.select-box{
+    background-image: url(../img/group.png);
+    background-position: 92% center;
+    background-repeat: no-repeat;
+}
+input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    accent-color: #003459 !important;
+}
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    accent-color: #003459 !important;
+}
+#formView{
+    flex-basis: 375px;
+}
+/*home page*/
+#heroBanner{
+    background-image: url("../img/HerroBanner.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: -105px;
+    min-height: 695px;
+}
+.Bhome2{
+    background-image: url(../img/Bhome2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    max-width: 1180px;
+    max-height: 378px;
+    align-items: center;
+    justify-content: end;
+    padding: 45px;
+}
+.profileBadge{
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -5px;
+}
+.playIcon{
+    font-size: 9px;
+    border: solid 2px;
+    padding: 5px 6px 6px 8px;
+    border-radius: 50%;
+    margin-left: 5px;
+    vertical-align: top;
+}
+#dogBlog{
+    max-width: 380px;
+}
+.btn-blog{
+    font-weight: 500;
+    font-size: 13px;
+    background-color: #00A7E7;
+    color: #fff;
+    border-radius: 50px;
+    border: 0;
+    padding: 3px 9px;
+}
+#contentBlog{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* number of lines to show */
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+.Bhome2 h1{
+    font-weight: 900;
+    font-size: 53px!important;
+    font-style: italic
+}
+/*End*/
+
+/*all pets*/
+.bAllPets{
+    background-image: url(../img/bannerAll-pets.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    max-width: 1180px;
+    max-height: 378px;
+    align-items: center;
+    justify-content: end;
+    padding: 45px;
+}
+.bContactUs{
+    background-image: url(../img/bContactUs.png);
+}
+#bAllPets button:hover{
+    background-color: #FCEED5 !important;
+    color: #002A48 !important;
+}
+#sortDogs{
+    background-image: url("../img/arrDown.png");
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    padding-right: 40px;
+}
+#pagination-container {
+    font-family: 'Montserrat' !important;
+}
+#pagination-container ul{
+    display: flex;
+    justify-content: center;
+}
+#pagination-container ul > li{
+    padding: 6px 12px;
+    color: #002A48;
+    margin: 0 5px;
+    border-radius: 8px;
+}
+#pagination-container ul > li:hover{
+    color: #fff;
+    background-color: #002A48;
+
+}
+#pagination-container .active{
+    padding: 6px 12px;
+    background-color: #002A48;
+    color: #fff;
+    margin: 0 5px;
+    border-radius: 8px;
+}
+#pagination-container ul > li > a, #pagination-container ul > li > span{
+    font-weight: 600;
+}
+/*end*/
+
+/*product detail*/
+.swiper {
+    width: 560px;
+}
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mySwiper {
+    width: 560px;
+    height: 476px;
+}
+.tumbNail {
+    height: 80px;
+    box-sizing: border-box;
+    margin: 10px;
+}
+.tumbNail img{
+    border-radius: 8px !important;
+    width: 80px !important;
+    height: 80px !important;
+    cursor: pointer;
+}
+.tumbNail .swiper-slide {
+    opacity: 0.4;
+}
+.swiper-slide {
+    background-position: center;
+}
+.tumbNail .swiper-slide-thumb-active {
+    opacity: 1;
+}
+.swiper-button-next, .swiper-button-prev {
+    color: #fff !important;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 17px;
+    background-color: #ffffff7a;
+    padding: 9px 12px 10px 14px;
+    border-radius: 50%;
+    font-weight: 600;
+}
+/*end Swiper*/
+
+#tableProduct td{
+    color: #667479 !important;
+}
+#tableProduct tr{
+    padding: 10px 0;
+}
+/*end*/
+
+/*profile vw*/
+#pgvw{
+    background-color: #EBEEEF;
+    padding: 95px 30px 40px 30px;
+    margin-top: -60px;
+}
+#pgvw .profileImg{
+    max-width: 194px;
+    max-height: 188px;
+    position: absolute;
+    border-radius: 50%;
+    top: -175px;
+    left: 20%;
+}
+.pBadge{
+    position: absolute;
+    top: -180px;
+    right: -45px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    max-width: 58px;
+    max-height: 58px;
+}
+.sideProfile{
+    width: 260px;
+    max-width: 100%;
+    height: fit-content;
+}
+.postProfile{
+    width: 891px;
+    max-width: 100%;
+}
+.accountBadge{
+    position: absolute;
+    left: 60%;
+    background-color: #fff;
+    padding: 9px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.postImgUser{
+    max-width: 80px;
+    max-height: 80px;
+}
+.contentPost{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.editCoverForm{
+    position: absolute;
+    top: 80%;
+    right: 2%;
+}
+.editCoverPhoto{
+    background-color: #fff;
+    color: #002A48;
+    padding: 12px 22px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+}
+/* Scrollbar */
+#postPfile::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+#postPfile::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(128, 128, 128, 0.29);
+    border-radius: 10px;
+}
+/* Handle */
+#postPfile::-webkit-scrollbar-thumb {
+    background: rgba(181, 181, 181, 0.24);
+    border-radius: 10px;
+}
+/* Handle on hover */
+#postPfile::-webkit-scrollbar-thumb:hover {
+    background: rgba(181, 181, 181, 0.49);
+}
+/*end*/
+
+#dogBox{
+    column-gap: 17px;
+}
+#dogBox div{
+    width: 280px !important;
+    font-size: 15px;
+}
+
+@media (min-width: 1200px){
+    #navListDark li > a{
+        color: #fff !important;
+    }
+    #navListDark li > a:hover{
+        color: #F7DBA7 !important;
+    }
+    h1{
+        font-size: 3.5rem !important;
+    }
+    h2,h3{
+        font-size: 2.1rem !important;
+    }
+}
+@media (min-width:1200px) and (max-width: 1400px){
+    .fs-1{font-size: 34px !important;}
+    h3{font-size: 26px !important;}
+}
+
+@media (min-width:992px) and (max-width: 1200px){
+    .Bhome2{
+        background-image: none;
+        background-color: antiquewhite;
+    }
+    #navListDark li > a{
+        color: #fff !important;
+    }
+    #navListDark li > a:hover{
+        color: #F7DBA7 !important;
+    }
+    .Bhome2{
+        padding-top: 15px;
+        padding-right: 15px;
+    }
+    .Bhome2 p{
+        width: 50%;
+        margin: 0 !important;
+    }
+    .Bhome2 h1, h1, h3{
+        font-size: 2.2rem !important;
+    }
+    .bAllPets{
+        background-size: auto !important;
+        background-position: right;
+        padding: 20px !important;
+        border-radius: 15px;
+    }
+    .bAllPets p{
+        padding-left: 230px !important;
+    }
+    #pgvw{
+        padding: 95px 15px 40px 0;
+    }
+    #pgvw .profileImg{
+        max-width: 140px;
+        top: -155px;
+    }
+    .pBadge{
+        max-width: 50px;
+        top: -160px;
+        right: -25px;
+    }
+}
+
+@media (max-width:992px){
+    .container{
+        width: 100% !important;
+    }
+    #heroBanner .container{
+        padding-top: 10px !important;
+    }
+    #navDark{
+        background-color: #fff !important;
+        padding: 0;
+    }
+    #heroBanner{
+        margin-top: -25px;
+        padding-bottom: 30px;
+        min-height: unset !important;
+        background-size: auto !important;
+        background-position: left;
+    }
+    .Bhome2{
+        background-image: none;
+        background-color: antiquewhite;
+    }
+    h1{
+        font-size: 2.5rem !important;
+    }
+    h2,h3{
+        font-size: 1.5rem !important;
+    }
+    .bAllPets{
+        background-size: auto !important;
+        background-position: right;
+        padding: 20px !important;
+        border-radius: 15px;
+    }
+    .bAllPets h1{
+        font-size: 36px !important;
+    }
+    #pgvw{
+        padding: 95px 15px 40px 0;
+    }
+    #pgvw .profileImg{
+        max-width: 85px;
+        top: -105px;
+    }
+    .pBadge{
+        max-width: 40px;
+        top: -110px;
+        right: 0px;
+    }
+    .sideProfile{
+        width: 100% !important;
+    }
+    .sideProfile section{
+        width: 45%;
+    }
+    .editCoverForm{
+        top: 60%;
+    }
+    .editCoverPhoto{
+        font-size: 11px;
+        padding: 12px 22px;
+    }
+}
+
+
+
+@media (max-width:768px){
+    .container{
+        width:100% !important;
+    }
+    .search{
+        width: 100% !important;
+        border: solid 2px aliceblue;
+    }
+    .searchDark {
+        border: solid 2px aliceblue;
+    }
+    .profileBadge{
+        right: unset !important;
+        left: 30px;
+    }
+    .navbar-collapse{
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+    }
+    #navDark form{
+        order: -2;
+        margin: auto;
+        margin-top: 10px;
+    }
+    #navDark ul{
+        margin: 0 !important;
+    }
+    #formView{
+        flex-basis: 100%;
+    }
+    .Bhome2{
+        background-position: right;
+    }
+    .Bhome2 h1, h1{
+        font-size: 2.2rem !important;
+    }
+    h2,h3{
+        font-size: 1.5rem !important;
+    }
+    .mySwiper, .swiper {
+        max-width: 420px;
+    }
+    .tumbNail {
+        height: 50px;
+    }
+    .tumbNail img{
+        width: 50px !important;
+        height: 50px !important;
+    }
+    .swiper-slide {
+        justify-content: flex-start;
+    }
+    #pgvw{
+        padding: 95px 15px 40px 0;
+    }
+    #pgvw .profileImg{
+        max-width: 85px;
+        top: -105px;
+    }
+    .pBadge{
+        max-width: 40px;
+        top: -110px;
+        right: -47px;
+    }
+    .sideProfile section{
+        width: 100%;
+    }
+    .btn-primary{
+        font-size: 12px;
+    }
+    .btn-outline-primary{
+        font-size: 12px;
+    }
+
+    /*navbar*/
+    .sidepanel  {
+        width: 0;
+        position: fixed;
+        z-index: 99999;
+        top: 0;
+        left: 0;
+        background-color: #ffffff;
+        overflow-x: hidden;
+        padding: 60px 0 30px 0;
+        box-shadow: 0 0 17px 0 lightgray;
+    }
+    #sideChild{
+        padding: 0 30px;
+    }
+    .closebtn {
+        display: block;
+    }
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+    }
+    .openbtn{
+        display: block;
+    }
+}
